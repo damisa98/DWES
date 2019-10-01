@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="../js/formulario.js"></script>
+    <title>Formulario</title>
+</head>
+<body>
+    <form method="post">
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" size="20" required><br>
+
+            <label for="Apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" maxlength="20" size="30" required><br>
+
+            <label for="Edad">Edad</label>
+            <input type="number" name="edad" id="edad" size="5" maxlength="2" min="18" max="99" required><br>
+
+            <label for="Movil">NºMovil</label>
+            <input type="text" name="movil" id="movil" size="15" maxlength="9" required><br>
+
+            <label for="Email">Correo Electronico</label>
+            <input type="text" name="email" id="email" size="40" maxlength="30" required><br>
+
+            <label for="Passw">Contraseña</label>
+            <input type="password" name="passw" id="passw" size="40" required><br>
+
+            <label for="rePassw">Repetir Contraseña</label>
+            <input type="password" name="repassw" id="repassw" size="40" required><br>
+
+            <label for="recordar">Recordar</label>
+            <input type="checkbox" name="recordar" id="recordar"><br><br>
+
+            <input type="submit" value="Enviar" onclick="validar()">
+            <input type="reset" value="Resetear">
+
+        </fieldset>
+
+    </form>
+</body>
+</html>
