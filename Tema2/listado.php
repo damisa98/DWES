@@ -21,6 +21,8 @@
                 <th>Modelo</th>
                 <th>Precio</th>
                 <th>Stock</th>
+                <th>Borrar</th>
+                <th>Modificar</th>
             </tr>
 <?php 
         while ($fila=mysqli_fetch_assoc($resul)) {?>
@@ -40,6 +42,8 @@
                 <td>
                     <?= $fila['stock'] ?>
                 </td>
+                <td><a href="borra.php?id=<?= $fila['id'] ?> ">Borrar</a></td>
+                <td><a href="modificarindex.php?id=<?= $fila['id'] ?>">Modificar</a></td>
             </tr>
 <?php  }
 

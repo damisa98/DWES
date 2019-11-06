@@ -15,6 +15,7 @@
         $modelo = isset($_POST['modelo']) ? mysqli_real_escape_string($conexion, trim ($_POST['modelo'])) : false;
         $precio= (int) $_POST['precio'];
         $stock= (int) $_POST['stock'];
+        $id= (int) $_POST['id'];
         $errores=array();
         
         if (empty($marca)) {
@@ -29,10 +30,13 @@
         if (empty($stock)) {
             $errores['stock']="El campo stock esta vacio";
         }
+        if (empty($id)) {
+            $errores['id']="El campo id esta vacio";
+        }
           
         if (count($errores)==0) {
         
-            $sql="INSERT INTO `coche`(`modelo`, `marca`, `precio`, `stock`) VALUES ('$modelo','$marca',$precio,$stock)";
+            $sql="UPDATE coche SET id=$id,modelo='$modelo',marca='$marca',precio=$precio,stock=$stock WHERE coche.id=$id";
             $insert=mysqli_query($conexion,$sql);
             if ($insert) {
                 header("location:listado.php");
@@ -42,7 +46,7 @@
                 echo "Error : " . mysqli_error($conexion);
             }
         }else {
-            header("location:inserttar.php");
+            header("location:listado.php");
         }
         mysqli_close($conexion);
         require_once "footer.html";
