@@ -1,0 +1,91 @@
+body{
+    background-color:darkgray ;
+}
+
+header{
+    background-color:#343A40 ;
+}
+
+header h1{
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+input{
+    display: block;
+    width: 100%;
+}
+
+#login,#registrarse,#buscar,#logeado{
+    text-align: center;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 5px #888888
+    
+}
+
+#logeado{
+    margin-bottom: 5%;
+}
+
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    text-align: left;
+}
+
+
+.principal{
+    text-align: center;
+    clear: both;
+    float: left;
+    width: 75%;
+  
+    
+}
+
+.formulario{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    padding-left: 1%;
+    padding-top: 1%;
+    float: right;
+}
+
+.footerimg{
+    width: 100px;
+}
+
+
+footer{
+    text-align: center;
+    clear: both;
+    background-color:#343A40 ;
+}
+
+footer h3{
+    padding-top: 1%;
+    color: white;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ultimaEntrada{
+    width: 100%;
+    text-align: left !important;
+    margin-left: 2%;
+    padding: 1%;
+}
+
+.ultimaEntrada img{
+    width: 25px;
+    height: 25px;
+}

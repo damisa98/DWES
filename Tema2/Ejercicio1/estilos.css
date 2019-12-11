@@ -1,0 +1,15 @@
+input{
+    display: block;
+}
+
+.conte{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: darkgray;
+    padding-top: 1%;
+}
+
+.footerimg{
+    width: 100px;
+}
